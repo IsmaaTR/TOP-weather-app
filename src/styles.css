@@ -93,6 +93,7 @@ body {
     align-items: center;
     justify-content: space-between;
     text-align: center;
+    min-width: 550px;
 }
 
 #city-name {
