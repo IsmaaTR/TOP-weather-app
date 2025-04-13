@@ -4,7 +4,7 @@ const HtmlWebpackPlugin = require("html-webpack-plugin");
 
 module.exports = {
   mode: "development",
-  entry: "./src/js/appController.js",
+  entry: "./src/js/uiModule.js",
   output: {
     filename: "main.js",
     path: path.resolve(__dirname, "dist"),

@@ -2,7 +2,7 @@ import "../styles.css";
 import { weatherModule } from "./weatherModule";
 import { format } from "date-fns";
 
-window.appController = (function() {
+export const appController = (function() {
 
     const actualDate = format(new Date(), 'yyyy-MM-dd');
 

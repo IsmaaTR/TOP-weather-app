@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    --blue-color: #60B5FF;
+    --light-blue-color: #AFDDFF;
+    --light-yellow-color: #FFECDB;
+    --orange-color: #FF9149;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+}
+
+#header {
+    background-color: var(--light-blue-color);
+    padding: 20px;
+}
+
+#header form {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+#header input {
+    width: 50%;
+    border: none;
+    border-radius: 20px;
+    padding-left: 10px;
+    font-size: 15px;
+}
+
+#header input:focus,
+#header input:hover,
+#header button:hover {
+    outline: none;
+    box-shadow: 0 0 5px 2px #60b5ffb4;
+}
+
+#city-form-submit,
+#toggle-unit {
+    border-radius: 50%;
+    border: none;
+    width: 30px;
+    cursor: pointer;
+}
+
+#header input,
+#header button {
+    height: 30px;
+    transition: 0.2s all;
+}
+
+#toggle-unit {
+    width: 50px;
+    border-radius: 10px;
+}
+
+#main-container {
+    display: flex;
+    flex-direction: column;
+    height: 100dvh;
+}
+
+#weather-container {
+    flex-grow: 1;
+}
+
+#footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    grid-column: span 1;
+    grid-column-start: 2;
+    grid-row-start: 2;
+    background-color: var(--light-yellow-color);
+}
+
+#github-logo {
+    height: 30px;
+    padding-left: 10px;
+    fill: var(--green-color);
+}
