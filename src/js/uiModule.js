@@ -16,7 +16,7 @@ window.UIModule = (function() {
         form.addEventListener("submit",async function(event) {
             event.preventDefault(); // Evita que el formulario recargue la página
             const cityName = document.getElementById("cityName").value;
-            const info = await appController.getWeatherInfo(cityName, useCelsius);
+            const info = await appController.getActualTemp(cityName, useCelsius);
             renderWeatherInfo(cityName, info);
         });
 

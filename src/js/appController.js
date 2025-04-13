@@ -6,7 +6,7 @@ export const appController = (function() {
 
     const actualDate = format(new Date(), 'yyyy-MM-dd');
 
-    async function getWeatherInfo(city, celsius) {
+    async function getActualTemp(city, celsius) {
         const weatherInfo = await weatherModule.getWeatherInfo(city.toLowerCase(), actualDate, null);
         const weatherInfoJson = await weatherInfo.json();
         let temperature = weatherInfoJson.currentConditions.temp;
@@ -27,5 +27,5 @@ export const appController = (function() {
         return temperature;
     }
 
-    return { getWeatherInfo }
+    return { getActualTemp }
 })();
